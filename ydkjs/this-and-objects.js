@@ -376,15 +376,15 @@ foo.call( obj ); // 2
 //CH3 built-in functions
 
 var strPrimitive = "I am a string";
-typeof strPrimitive;							// "string"
-strPrimitive instanceof String;					// false
+typeof strPrimitive;		// "string"
+strPrimitive instanceof String;	// false
 
 var strObject = new String( "I am a string" );
-typeof strObject; 								// "object"
-strObject instanceof String;					// true
+typeof strObject; 				// "object"
+strObject instanceof String;	// true
 
 // inspect the object sub-type
-Object.prototype.toString.call( strObject );	// [object String]
+Object.prototype.toString.call( strObject );	//[object String]
 
 // accessing object
 
